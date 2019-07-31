@@ -24,4 +24,12 @@
 
 ---
 
-1. 创建新的分支 : git checkout -b {{branchName}}
+1. 创建新的分支并切换 : git checkout -b {{branchName}}
+
+```shell
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令
+git branch {{branchName}}   创建分支
+git checkout {{branchName}} 切换分支
+```
+
+2. 合并分支: git merge {{branchName}}
