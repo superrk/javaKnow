@@ -71,5 +71,8 @@ fabric.properties
 
 .gitignore
 .idea/**
+.settings/**
+.project
+.classpath
 javaKnow.iml
 src/
