@@ -16,9 +16,9 @@
 12. 本地仓库关联到远程仓库: git remote add origin {{gitpath}}
 13. 本地库推送到远程: git push -u origin master
 
-```
-一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
-```
+    > 一次推送 master 分支时，加上了-u 参数，Git 不但会把本地的 master 分支内容推送的远程新的 master 分支，还会把本地的 master 分支和远程的 master 分支关联起来，在以后的推送或者拉取时就可以简化命令
+
+14. 打标签: git tag {{tagName}} {{commitId}}
 
 ## 分支管理
 
@@ -33,3 +33,17 @@ git checkout {{branchName}} 切换分支
 ```
 
 2. 合并分支: git merge {{branchName}}
+3. 删除分支: git branch -d {{branchName}}
+4. 查看分支: git branch
+5. 指定远程链接: git branch --set-upstream-to=origin/dev dev
+
+## git 储藏
+
+- git stash :暂存当前的工作现场
+- git stash apply: 恢复但不删除
+- git stash drop: 删除
+- git stash pop: git stash apply + git stash drop
+
+## git rebase
+
+> git rebase 命令在另一个分支基础之上重新应用，用于把一个分支的修改合并到当前分支。
