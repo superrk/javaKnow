@@ -69,6 +69,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+target/**
 .gitignore
 .idea/**
 .settings/**
@@ -76,10 +77,3 @@ fabric.properties
 .project
 .classpath
 javaKnow.iml
-/target/classes/io/text2.txt
-/target/classes/META-INF/javaKnow.kotlin_module
-/target/classes/org/rk/java/knowledge/rkio/socket/IOClient.class
-/target/classes/org/rk/java/knowledge/rkio/socket/IOServer.class
-/target/classes/org/rk/java/knowledge/rkio/Aio.class
-/target/classes/org/rk/java/knowledge/rkio/Nio.class
-/target/classes/org/rk/java/knowledge/rkio/SimpleBio.class
