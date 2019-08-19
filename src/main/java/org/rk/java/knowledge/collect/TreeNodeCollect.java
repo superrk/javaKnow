@@ -46,12 +46,12 @@ public class TreeNodeCollect {
         Stack<TreeNode> stack = new Stack<>();
         while (treeNode != null || !stack.isEmpty()) {
             while (treeNode != null) {
-                System.out.print(treeNode.val);
                 stack.push(treeNode);
                 treeNode = treeNode.left;
             }
             if (!stack.isEmpty()) {
                 treeNode = stack.pop();
+                System.out.print(treeNode.val);
                 treeNode = treeNode.right;
             }
         }
@@ -65,7 +65,7 @@ public class TreeNodeCollect {
                 treeNode = treeNode.left;
             }
             boolean tag = true;
-            TreeNode preNode = null;  // 前驱节点
+            TreeNode preNode = null; // 前驱节点
             while (!stack.isEmpty() && tag == true) {
                 treeNode = stack.peek();
                 if (treeNode.right == preNode) { // 之前访问的为空节点或是栈顶节点的右子节点
